@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	
+<struts>
+	<constant name="struts.action.extension" value="do"/>
+	<constant name="struts.action.excludePattern" value="/jcaptcha"/>
+	<constant name="struts.i18n.encoding" value="ISO-8859-1"/>
+	<constant name="struts.custom.i18n.resources" value="global-message"></constant>
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true"/>
+	<constant name="struts.ui.theme" value="simple" />
+	
+	<package name="middleware" namespace="/" extends="struts-default">
+		<result-types>
+	        <result-type name="json" class="org.apache.struts2.json.JSONResult"/>
+	    </result-types>
+	  
+		
+		<!-- map global results -->
+		<global-results>
+<!-- 			<result name="login" type="redirect">/login.do</result> -->
+			<result name="error">/jsp/Error.jsp</result>
+		</global-results>
+		
+		 <global-exception-mappings>
+	 			<exception-mapping exception="java.lang.Exception" result="error" />
+   		 </global-exception-mappings>
+		
+		
+	</package>
+</struts>

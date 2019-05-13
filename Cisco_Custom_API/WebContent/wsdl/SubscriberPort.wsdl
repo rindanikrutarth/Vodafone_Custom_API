@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:tns="http://broadhop.com/unifiedapi/soap" xmlns:tnstypes="http://broadhop.com/unifiedapi/soap/types" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="QuantumUA" targetNamespace="http://broadhop.com/unifiedapi/soap">
+  <wsdl:types>
+    <xsd:schema>
+      <xsd:import namespace="http://broadhop.com/unifiedapi/soap/types" schemaLocation="UnifiedApi.xsd"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="AddCredentialRequest">
+    <wsdl:part element="tnstypes:AddCredentialRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="AddCredentialResponse">
+    <wsdl:part element="tnstypes:AddCredentialResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="AddCredentialsRequest">
+    <wsdl:part element="tnstypes:AddCredentialsRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="AddCredentialsResponse">
+    <wsdl:part element="tnstypes:AddCredentialsResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="AddServiceRequest">
+    <wsdl:part element="tnstypes:AddServiceRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="AddServiceResponse">
+    <wsdl:part element="tnstypes:AddServiceResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="AuthenticateSubscriberRequest">
+    <wsdl:part element="tnstypes:AuthenticateSubscriberRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="AuthenticateSubscriberResponse">
+    <wsdl:part element="tnstypes:AuthenticateSubscriberResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ChangeCredentialPasswordRequest">
+    <wsdl:part element="tnstypes:ChangeCredentialPasswordRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ChangeCredentialPasswordResponse">
+    <wsdl:part element="tnstypes:ChangeCredentialPasswordResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ChangeCredentialUsernameRequest">
+    <wsdl:part element="tnstypes:ChangeCredentialUsernameRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ChangeCredentialUsernameResponse">
+    <wsdl:part element="tnstypes:ChangeCredentialUsernameResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ChangeSubscriberAvpsRequest">
+    <wsdl:part element="tnstypes:ChangeSubscriberAvpsRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ChangeSubscriberAvpsResponse">
+    <wsdl:part element="tnstypes:ChangeSubscriberAvpsResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ChangeSubscriberStatusRequest">
+    <wsdl:part element="tnstypes:ChangeSubscriberStatusRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ChangeSubscriberStatusResponse">
+    <wsdl:part element="tnstypes:ChangeSubscriberStatusResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="CreateSubscriberRequest">
+    <wsdl:part element="tnstypes:CreateSubscriberRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="CreateSubscriberResponse">
+    <wsdl:part element="tnstypes:CreateSubscriberResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="CreateSubscribersRequest">
+    <wsdl:part element="tnstypes:CreateSubscribersRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="CreateSubscribersResponse">
+    <wsdl:part element="tnstypes:CreateSubscribersResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteCredentialRequest">
+    <wsdl:part element="tnstypes:DeleteCredentialRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteCredentialResponse">
+    <wsdl:part element="tnstypes:DeleteCredentialResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteCredentialsRequest">
+    <wsdl:part element="tnstypes:DeleteCredentialsRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteCredentialsResponse">
+    <wsdl:part element="tnstypes:DeleteCredentialsResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteServiceRequest">
+    <wsdl:part element="tnstypes:DeleteServiceRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteServiceResponse">
+    <wsdl:part element="tnstypes:DeleteServiceResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteSubscriberRequest">
+    <wsdl:part element="tnstypes:DeleteSubscriberRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteSubscriberResponse">
+    <wsdl:part element="tnstypes:DeleteSubscriberResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetSubscriberCountRequest">
+    <wsdl:part element="tnstypes:GetSubscriberCountRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetSubscriberCountResponse">
+    <wsdl:part element="tnstypes:GetSubscriberCountResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetSubscriberRequest">
+    <wsdl:part element="tnstypes:GetSubscriberRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetSubscriberResponse">
+    <wsdl:part element="tnstypes:GetSubscriberResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="KeepAliveRequest">
+    <wsdl:part element="tnstypes:KeepAliveRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="KeepAliveResponse">
+    <wsdl:part element="tnstypes:KeepAliveResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ProvisionServiceRequest">
+    <wsdl:part element="tnstypes:ProvisionServiceRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ProvisionServiceResponse">
+    <wsdl:part element="tnstypes:ProvisionServiceResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SearchSubscribersRequest">
+    <wsdl:part element="tnstypes:SearchSubscribersRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SearchSubscribersResponse">
+    <wsdl:part element="tnstypes:SearchSubscribersResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SwitchServiceRequest">
+    <wsdl:part element="tnstypes:SwitchServiceRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SwitchServiceResponse">
+    <wsdl:part element="tnstypes:SwitchServiceResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateServiceRequest">
+    <wsdl:part element="tnstypes:UpdateServiceRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateServiceResponse">
+    <wsdl:part element="tnstypes:UpdateServiceResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateSubscriberRequest">
+    <wsdl:part element="tnstypes:UpdateSubscriberRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateSubscriberResponse">
+    <wsdl:part element="tnstypes:UpdateSubscriberResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="ExecuteActionRequest">
+    <wsdl:part element="tnstypes:ExecuteActionRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ExecuteActionResponse">
+    <wsdl:part element="tnstypes:ExecuteActionResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="QuerySessionRequest">
+    <wsdl:part element="tnstypes:QuerySessionRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="QuerySessionResponse">
+    <wsdl:part element="tnstypes:QuerySessionResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="StopSessionRequest">
+    <wsdl:part element="tnstypes:StopSessionRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="StopSessionResponse">
+    <wsdl:part element="tnstypes:StopSessionResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateSessionRequest">
+    <wsdl:part element="tnstypes:UpdateSessionRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateSessionResponse">
+    <wsdl:part element="tnstypes:UpdateSessionResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="ChangeBalanceSubscriberIdRequest">
+    <wsdl:part element="tnstypes:ChangeBalanceSubscriberIdRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ChangeBalanceSubscriberIdResponse">
+    <wsdl:part element="tnstypes:ChangeBalanceSubscriberIdResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ChangeRecurringRefreshDayRequest">
+    <wsdl:part element="tnstypes:ChangeRecurringRefreshDayRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ChangeRecurringRefreshDayResponse">
+    <wsdl:part element="tnstypes:ChangeRecurringRefreshDayResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ChangeBillCycleRequest">
+    <wsdl:part element="tnstypes:ChangeBillCycleRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ChangeBillCycleResponse">
+    <wsdl:part element="tnstypes:ChangeBillCycleResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="CreateBalanceRequest">
+    <wsdl:part element="tnstypes:CreateBalanceRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="CreateBalanceResponse">
+    <wsdl:part element="tnstypes:CreateBalanceResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="CreditRequest">
+    <wsdl:part element="tnstypes:CreditRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="CreditResponse">
+    <wsdl:part element="tnstypes:CreditResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DebitRequest">
+    <wsdl:part element="tnstypes:DebitRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DebitResponse">
+    <wsdl:part element="tnstypes:DebitResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteBalanceRequest">
+    <wsdl:part element="tnstypes:DeleteBalanceRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteBalanceResponse">
+    <wsdl:part element="tnstypes:DeleteBalanceResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteCreditRequest">
+    <wsdl:part element="tnstypes:DeleteCreditRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteCreditResponse">
+    <wsdl:part element="tnstypes:DeleteCreditResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteQuotaRequest">
+    <wsdl:part element="tnstypes:DeleteQuotaRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteQuotaResponse">
+    <wsdl:part element="tnstypes:DeleteQuotaResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ExtendCreditRequest">
+    <wsdl:part element="tnstypes:ExtendCreditRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ExtendCreditResponse">
+    <wsdl:part element="tnstypes:ExtendCreditResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="QueryBalanceRequest">
+    <wsdl:part element="tnstypes:QueryBalanceRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="QueryBalanceResponse">
+    <wsdl:part element="tnstypes:QueryBalanceResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="RolloverCreditRequest">
+    <wsdl:part element="tnstypes:RolloverCreditRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="RolloverCreditResponse">
+    <wsdl:part element="tnstypes:RolloverCreditResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateBalanceRequest">
+    <wsdl:part element="tnstypes:UpdateBalanceRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateBalanceResponse">
+    <wsdl:part element="tnstypes:UpdateBalanceResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="CreateVoucherRequest">
+    <wsdl:part element="tnstypes:CreateVoucherRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="CreateVoucherResponse">
+    <wsdl:part element="tnstypes:CreateVoucherResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="CreateVouchersRequest">
+    <wsdl:part element="tnstypes:CreateVouchersRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="CreateVouchersResponse">
+    <wsdl:part element="tnstypes:CreateVouchersResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteVoucherBatchRequest">
+    <wsdl:part element="tnstypes:DeleteVoucherBatchRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteVoucherBatchResponse">
+    <wsdl:part element="tnstypes:DeleteVoucherBatchResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteVoucherRequest">
+    <wsdl:part element="tnstypes:DeleteVoucherRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="DeleteVoucherResponse">
+    <wsdl:part element="tnstypes:DeleteVoucherResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GenerateVoucherBatchRequest">
+    <wsdl:part element="tnstypes:GenerateVoucherBatchRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GenerateVoucherBatchResponse">
+    <wsdl:part element="tnstypes:GenerateVoucherBatchResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="QueryVoucherRequest">
+    <wsdl:part element="tnstypes:QueryVoucherRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="QueryVoucherResponse">
+    <wsdl:part element="tnstypes:QueryVoucherResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="RedeemVoucherRequest">
+    <wsdl:part element="tnstypes:RedeemVoucherRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="RedeemVoucherResponse">
+    <wsdl:part element="tnstypes:RedeemVoucherResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="AuditRequest">
+    <wsdl:part element="tnstypes:AuditRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="AuditResponse">
+    <wsdl:part element="tnstypes:AuditResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="PurgeAuditHistoryRequest">
+    <wsdl:part element="tnstypes:PurgeAuditHistoryRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="PurgeAuditHistoryResponse">
+    <wsdl:part element="tnstypes:PurgeAuditHistoryResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="QueryAuditHistoryRequest">
+    <wsdl:part element="tnstypes:QueryAuditHistoryRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="QueryAuditHistoryResponse">
+    <wsdl:part element="tnstypes:QueryAuditHistoryResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="GetRefDataServicesRequest">
+    <wsdl:part element="tnstypes:GetRefDataServicesRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetRefDataServicesResponse">
+    <wsdl:part element="tnstypes:GetRefDataServicesResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetRefDataBalanceRequest">
+    <wsdl:part element="tnstypes:GetRefDataBalanceRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetRefDataBalanceResponse">
+    <wsdl:part element="tnstypes:GetRefDataBalanceResponse" name="parameters"/>
+  </wsdl:message>
+
+    <wsdl:message name="RemoveSubscriberSsidRequest">
+	    <wsdl:part element="tnstypes:RemoveSubscriberSsidRequest" name="parameters"/>
+	</wsdl:message>
+	<wsdl:message name="RemoveSubscriberSsidResponse">
+		<wsdl:part element="tnstypes:RemoveSubscriberSsidResponse" name="parameters"/>
+	</wsdl:message>
+
+	<wsdl:message name="AddSubscriberSsidsRequest">
+	    <wsdl:part element="tnstypes:AddSubscriberSsidsRequest" name="parameters"/>
+	</wsdl:message>
+	<wsdl:message name="AddSubscriberSsidsResponse">
+		<wsdl:part element="tnstypes:AddSubscriberSsidsResponse" name="parameters"/>
+	</wsdl:message>
+
+	<wsdl:message name="GetSubscriberSsidsRequest">
+	    <wsdl:part element="tnstypes:GetSubscriberSsidsRequest" name="parameters"/>
+	</wsdl:message>
+	<wsdl:message name="GetSubscriberSsidsResponse">
+		<wsdl:part element="tnstypes:GetSubscriberSsidsResponse" name="parameters"/>
+	</wsdl:message>
+
+	<wsdl:message name="DeleteSubscriberSsidRequest">
+	    <wsdl:part element="tnstypes:DeleteSubscriberSsidRequest" name="parameters"/>
+	</wsdl:message>
+	<wsdl:message name="DeleteSubscriberSsidResponse">
+		<wsdl:part element="tnstypes:DeleteSubscriberSsidResponse" name="parameters"/>
+	</wsdl:message>
+
+  <wsdl:portType name="SubscriberPortType">
+    <wsdl:operation name="AddCredential">
+      <wsdl:input message="tns:AddCredentialRequest"/>
+      <wsdl:output message="tns:AddCredentialResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="AddCredentials">
+      <wsdl:input message="tns:AddCredentialsRequest"/>
+      <wsdl:output message="tns:AddCredentialsResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="AddService">
+      <wsdl:input message="tns:AddServiceRequest"/>
+      <wsdl:output message="tns:AddServiceResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateSubscriber">
+      <wsdl:input message="tns:AuthenticateSubscriberRequest"/>
+      <wsdl:output message="tns:AuthenticateSubscriberResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeCredentialPassword">
+      <wsdl:input message="tns:ChangeCredentialPasswordRequest"/>
+      <wsdl:output message="tns:ChangeCredentialPasswordResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeCredentialUsername">
+      <wsdl:input message="tns:ChangeCredentialUsernameRequest"/>
+      <wsdl:output message="tns:ChangeCredentialUsernameResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeSubscriberAvps">
+      <wsdl:input message="tns:ChangeSubscriberAvpsRequest"/>
+      <wsdl:output message="tns:ChangeSubscriberAvpsResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeSubscriberStatus">
+      <wsdl:input message="tns:ChangeSubscriberStatusRequest"/>
+      <wsdl:output message="tns:ChangeSubscriberStatusResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSubscriber">
+      <wsdl:input message="tns:CreateSubscriberRequest"/>
+      <wsdl:output message="tns:CreateSubscriberResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSubscribers">
+      <wsdl:input message="tns:CreateSubscribersRequest"/>
+      <wsdl:output message="tns:CreateSubscribersResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCredential">
+      <wsdl:input message="tns:DeleteCredentialRequest"/>
+      <wsdl:output message="tns:DeleteCredentialResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCredentials">
+      <wsdl:input message="tns:DeleteCredentialsRequest"/>
+      <wsdl:output message="tns:DeleteCredentialsResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteService">
+      <wsdl:input message="tns:DeleteServiceRequest"/>
+      <wsdl:output message="tns:DeleteServiceResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubscriber">
+      <wsdl:input message="tns:DeleteSubscriberRequest"/>
+      <wsdl:output message="tns:DeleteSubscriberResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriberCount">
+      <wsdl:input message="tns:GetSubscriberCountRequest"/>
+      <wsdl:output message="tns:GetSubscriberCountResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriber">
+      <wsdl:input message="tns:GetSubscriberRequest"/>
+      <wsdl:output message="tns:GetSubscriberResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="KeepAlive">
+      <wsdl:input message="tns:KeepAliveRequest"/>
+      <wsdl:output message="tns:KeepAliveResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ProvisionService">
+      <wsdl:input message="tns:ProvisionServiceRequest"/>
+      <wsdl:output message="tns:ProvisionServiceResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="SearchSubscribers">
+      <wsdl:input message="tns:SearchSubscribersRequest"/>
+      <wsdl:output message="tns:SearchSubscribersResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="SwitchService">
+      <wsdl:input message="tns:SwitchServiceRequest"/>
+      <wsdl:output message="tns:SwitchServiceResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateService">
+      <wsdl:input message="tns:UpdateServiceRequest"/>
+      <wsdl:output message="tns:UpdateServiceResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSubscriber">
+      <wsdl:input message="tns:UpdateSubscriberRequest"/>
+      <wsdl:output message="tns:UpdateSubscriberResponse"/>
+    </wsdl:operation>
+
+    <wsdl:operation name="ExecuteAction">
+      <wsdl:input message="tns:ExecuteActionRequest"/>
+      <wsdl:output message="tns:ExecuteActionResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySession">
+      <wsdl:input message="tns:QuerySessionRequest"/>
+      <wsdl:output message="tns:QuerySessionResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="StopSession">
+      <wsdl:input message="tns:StopSessionRequest"/>
+      <wsdl:output message="tns:StopSessionResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSession">
+      <wsdl:input message="tns:UpdateSessionRequest"/>
+      <wsdl:output message="tns:UpdateSessionResponse"/>
+    </wsdl:operation>
+
+    <wsdl:operation name="ChangeBalanceSubscriberId">
+      <wsdl:input message="tns:ChangeBalanceSubscriberIdRequest"/>
+      <wsdl:output message="tns:ChangeBalanceSubscriberIdResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeRecurringRefreshDay">
+      <wsdl:input message="tns:ChangeRecurringRefreshDayRequest"/>
+      <wsdl:output message="tns:ChangeRecurringRefreshDayResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeBillCycle">
+      <wsdl:input message="tns:ChangeBillCycleRequest"/>
+      <wsdl:output message="tns:ChangeBillCycleResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="CreateBalance">
+      <wsdl:input message="tns:CreateBalanceRequest"/>
+      <wsdl:output message="tns:CreateBalanceResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="Credit">
+      <wsdl:input message="tns:CreditRequest"/>
+      <wsdl:output message="tns:CreditResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="Debit">
+      <wsdl:input message="tns:DebitRequest"/>
+      <wsdl:output message="tns:DebitResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBalance">
+      <wsdl:input message="tns:DeleteBalanceRequest"/>
+      <wsdl:output message="tns:DeleteBalanceResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCredit">
+      <wsdl:input message="tns:DeleteCreditRequest"/>
+      <wsdl:output message="tns:DeleteCreditResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteQuota">
+      <wsdl:input message="tns:DeleteQuotaRequest"/>
+      <wsdl:output message="tns:DeleteQuotaResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ExtendCredit">
+      <wsdl:input message="tns:ExtendCreditRequest"/>
+      <wsdl:output message="tns:ExtendCreditResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="QueryBalance">
+      <wsdl:input message="tns:QueryBalanceRequest"/>
+      <wsdl:output message="tns:QueryBalanceResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="RolloverCredit">
+      <wsdl:input message="tns:RolloverCreditRequest"/>
+      <wsdl:output message="tns:RolloverCreditResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBalance">
+      <wsdl:input message="tns:UpdateBalanceRequest"/>
+      <wsdl:output message="tns:UpdateBalanceResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="CreateVoucher">
+      <wsdl:input message="tns:CreateVoucherRequest"/>
+      <wsdl:output message="tns:CreateVoucherResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="CreateVouchers">
+      <wsdl:input message="tns:CreateVouchersRequest"/>
+      <wsdl:output message="tns:CreateVouchersResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVoucher">
+      <wsdl:input message="tns:DeleteVoucherRequest"/>
+      <wsdl:output message="tns:DeleteVoucherResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVoucherBatch">
+      <wsdl:input message="tns:DeleteVoucherBatchRequest"/>
+      <wsdl:output message="tns:DeleteVoucherBatchResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateVoucherBatch">
+      <wsdl:input message="tns:GenerateVoucherBatchRequest"/>
+      <wsdl:output message="tns:GenerateVoucherBatchResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="QueryVoucher">
+      <wsdl:input message="tns:QueryVoucherRequest"/>
+      <wsdl:output message="tns:QueryVoucherResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="RedeemVoucher">
+      <wsdl:input message="tns:RedeemVoucherRequest"/>
+      <wsdl:output message="tns:RedeemVoucherResponse"/>
+    </wsdl:operation>
+
+    <wsdl:operation name="Audit">
+      <wsdl:input message="tns:AuditRequest"/>
+      <wsdl:output message="tns:AuditResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="PurgeAuditHistory">
+      <wsdl:input message="tns:PurgeAuditHistoryRequest"/>
+      <wsdl:output message="tns:PurgeAuditHistoryResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="QueryAuditHistory">
+      <wsdl:input message="tns:QueryAuditHistoryRequest"/>
+      <wsdl:output message="tns:QueryAuditHistoryResponse"/>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetRefDataServices">
+      <wsdl:input message="tns:GetRefDataServicesRequest"/>
+      <wsdl:output message="tns:GetRefDataServicesResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetRefDataBalance">
+      <wsdl:input message="tns:GetRefDataBalanceRequest"/>
+      <wsdl:output message="tns:GetRefDataBalanceResponse"/>
+    </wsdl:operation>
+
+    <wsdl:operation name="RemoveSubscriberSsid">
+      <wsdl:input message="tns:RemoveSubscriberSsidRequest"/>
+      <wsdl:output message="tns:RemoveSubscriberSsidResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="AddSubscriberSsids">
+      <wsdl:input message="tns:AddSubscriberSsidsRequest"/>
+      <wsdl:output message="tns:AddSubscriberSsidsResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriberSsids">
+      <wsdl:input message="tns:GetSubscriberSsidsRequest"/>
+      <wsdl:output message="tns:GetSubscriberSsidsResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubscriberSsid">
+      <wsdl:input message="tns:DeleteSubscriberSsidRequest"/>
+      <wsdl:output message="tns:DeleteSubscriberSsidResponse"/>
+    </wsdl:operation>
+
+
+  </wsdl:portType>
+  <wsdl:binding name="SubscriberBinding" type="tns:SubscriberPortType">
+    <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="AddCredential">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/AddCredential"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCredentials">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/AddCredentials"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddService">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/AddService"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateSubscriber">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/AuthenticateSubscriber"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeCredentialPassword">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/ChangeCredentialPassword"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeCredentialUsername">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/ChangeCredentialUsername"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeSubscriberAvps">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/ChangeSubscriberAvps"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeSubscriberStatus">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/ChangeSubscriberStatus"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSubscriber">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/CreateSubscriber"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSubscribers">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/CreateSubscribers"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCredential">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/DeleteCredential"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCredentials">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/DeleteCredentials"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteService">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/DeleteService"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubscriber">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/DeleteSubscriber"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriberCount">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/GetSubscriberCount"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriber">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/GetSubscriber"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KeepAlive">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/KeepAlive"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProvisionService">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/ProvisionService"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchSubscribers">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/SearchSubscribers"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SwitchService">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/SwitchService"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateService">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/UpdateService"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSubscriber">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/UpdateSubscriber"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="ExecuteAction">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/ExecuteAction"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySession">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/QuerySession"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StopSession">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/StopSession"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSession">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/UpdateSession"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="ChangeBalanceSubscriberId">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/ChangeBalanceSubscriberId"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeRecurringRefreshDay">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/ChangeRecurringRefreshDay"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeBillCycle">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/ChangeBillCycle"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateBalance">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/CreateBalance"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Credit">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/Credit"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Debit">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/Debit"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBalance">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/DeleteBalance"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCredit">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/DeleteCredit"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteQuota">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/DeleteQuota"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExtendCredit">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/ExtendCredit"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryBalance">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/QueryBalance"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RolloverCredit">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/RolloverCredit"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBalance">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/UpdateBalance"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateVoucher">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/CreateVoucher"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateVouchers">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/CreateVouchers"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVoucher">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/DeleteVoucher"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVoucherBatch">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/DeleteVoucherBatch"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateVoucherBatch">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/GenerateVoucherBatch"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryVoucher">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/QueryVoucher"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RedeemVoucher">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/RedeemVoucher"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="Audit">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/Audit"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PurgeAuditHistory">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/PurgeAuditHistory"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryAuditHistory">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/QueryAuditHistory"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRefDataServices">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/GetRefDataServices"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRefDataBalance">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/GetRefDataBalance"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="RemoveSubscriberSsid">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/RemoveSubscriberSsid"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSubscriberSsids">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/AddSubscriberSsids"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriberSsids">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/GetSubscriberSsids"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubscriberSsid">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://broadhop.com/ua/DeleteSubscriberSsid"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+
+  </wsdl:binding>
+  <wsdl:service name="QuantumUA">
+    <wsdl:port binding="tns:SubscriberBinding" name="SubscriberPort">
+      <soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" location="http://localhost:8080/Cisco_Custom_API/services/SubscriberPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
